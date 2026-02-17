@@ -18,6 +18,26 @@ public class Main {
             System.out.println("Hoorah");
         else
             System.out.println("Not equal");
+        
+        // Testing Reverse
+        System.out.println("Original list:");
+        list.display();
+        list.reverse();
+        System.out.println("Reversed list:");
+        list.display();
+
+        // Testing Remove
+        list.remove(10);
+        System.out.println("After removing 10:");
+        list.display();
+        
+        // Testing Duplicates
+        list.addLast(5); // Now we have two 5s at the end
+        System.out.println("Before removing duplicates:");
+        list.display();
+        list.deleteConsecutiveDuplicates();
+        System.out.println("After removing consecutive duplicates:");
+        list.display();
     }
     
 }
